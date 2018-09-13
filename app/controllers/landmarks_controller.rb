@@ -28,7 +28,7 @@ class LandmarksController < ApplicationController
     @mark.name = params[:name]
     @mark.year_completed = params[:year_completed]
     @mark.save
-    redirect to '/landmarks/#{mark.id}'
+    redirect to "/landmarks/#{@mark.id}"
   end
 
 
