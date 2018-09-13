@@ -20,7 +20,7 @@ class LandmarksController < ApplicationController
   end
 
   post '/landmarks' do
-    landmark = Landmark.create(name: params[:landmark[name]])
+    landmark = Landmark.create(name: params["landmark"]["name"])
   end
 
   patch '/landmarks/:id' do
